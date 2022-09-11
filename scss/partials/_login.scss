@@ -1,0 +1,202 @@
+//Main banner
+.content-form {
+    width: 95%;
+    margin: 0px 0 40px 0;
+    @include media(xs) {
+        margin: 0;
+    }
+    label {
+        display: block;
+        font-family: $roboto;
+        font-weight: 700;
+        color: #fff;
+        font-size: 18px;
+        @include media(xs) {
+            font-size: 14px;
+        }
+    }
+    .form-group {
+        position: relative;
+    }
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+        border-radius: 10px;
+        padding: 12px;
+        border: none;
+        &:focus {
+            outline: none !important;
+        }
+        @include media(xs) {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    a {
+        display: block;
+        margin: 10px 0 35px;
+        border-radius: 10px;
+        @include media(xs) {
+            font-size: 13px;
+            margin: 25px 0;
+        }
+    }
+    .accept-tyc {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+        padding: 35px 0;
+        justify-content: center;
+        font-size: 13px;
+        font-family: $roboto;
+        @include media(xs){
+            padding: 0px 0;
+            font-size: 11px;
+        }
+        div {
+            a {
+                display: inline;
+                color: #fff;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+        }
+        input {
+            margin: 0 8px 0 0;
+        }
+    }
+}
+
+.cont-log {
+    @include media(xs) {
+        padding-left: 20px;
+    }
+}
+
+.btns-tyc {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    a {
+        font-weight: 300;
+        padding: 6px 12px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        font-size: 14px;
+        color: #fff;
+        display: block;
+        margin: 0 8px 0 0;
+        @include media(xs) {
+            font-size: 11px;
+            padding: 6px 8px;
+        }
+    }
+}
+
+.cont-log {
+    padding-bottom: 45px;
+    .content-title{
+        position: static !important;
+        @include media(xs){
+            padding: 0;
+            margin-top: 0;
+        }
+
+    }
+}
+
+.date-inp {
+    position: relative;
+    &::after {
+        content: url($pathIco + 'ico-calendar.svg');
+        position: absolute;
+        bottom: 3px;
+        left: 8px;
+    }
+    input {
+        padding-left: 40px !important;
+    }
+}
+
+#ui-datepicker-div {
+    display: none;
+}
+
+#ui-datepicker-div {
+    box-shadow: 0px 0px 5px 0px #6b6b6b;
+    border: none !important;
+    padding: 12px;
+    
+    
+}
+
+#ui-datepicker-div .ui-datepicker-header {
+    background-color: #fff;
+    border: none;
+}
+
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-title {
+    color: $gray-banco;
+    font-family: "Roboto";
+    font-size: 17px;
+}
+
+.ui-datepicker-calendar thead span {
+    color: #6D6E71;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.ui-widget-header .ui-icon-circle-triangle-e {
+    background-image: url("../images/icons/arrow-left-calendar.svg") !important;
+    background-position: center;
+}
+
+.ui-widget-header .ui-icon-circle-triangle-w {
+    background-image: url("../images/icons/arrow-rigth-calendar.svg") !important;
+    background-position: center;
+}
+
+.ui-datepicker-header.ui-corner-all {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.ui-state-default {
+    border-radius: 50%;
+    border: none !important;
+    background: transparent !important;
+    color: #808080 !important;
+    margin: 0 auto !important;
+    font-family: "Roboto";
+    font-size: 12px !important;
+    width: 25px;
+    height: 25px;
+    text-align: center !important;
+    padding-top: 8px !important;
+    transition: all 0.2s linear;
+}
+
+.ui-state-default:hover {
+    background-color: $yellow-banco !important;
+    color: #fff !important;
+    font-family: "Roboto" !important;
+}
+
+.ui-state-active {
+    background-color: $yellow-banco !important;
+    color: #fff !important;
+    font-family: "Roboto" !important;
+}
+
+.alert {
+    &.code {
+        color: #fff;
+        font-size: 14px;
+        color: #F82D2D;
+    }
+}

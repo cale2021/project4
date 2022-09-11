@@ -1,0 +1,4 @@
+#para url amigable
+RewriteRule ^home$ home.html
+RewriteRule ^terminos$ terminosycondiciones.html
+RewriteRule ^redimir$ redimir.html

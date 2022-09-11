@@ -1,0 +1,66 @@
+.faq-content {
+    button {
+        &.btn {
+            text-align: left;
+            color: #000;
+            text-decoration: none;
+            padding: 25px 15px;
+            display: flex;
+            width: 100%;
+            position: relative;
+            padding-right: 50px;
+            @include media(xs){
+                padding-right: 25px !important;
+            }
+            span {
+                padding-right: 8px;
+                font-weight: 900;
+                font-size: 28px;
+                @include media(xs){
+                    font-size: 22px;
+                }
+            }
+            img {
+                transition: .5s ease;
+                position: absolute;
+                right: 0;
+                @include media(xs){
+                    width: 30px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+}
+
+.contenttyc {
+    padding: 70px 0 40px 0;
+    @include media(xs){
+        padding-top: 20px;
+        padding-bottom: 190px;
+    }
+    .card {
+        margin-bottom: 10px;
+        -webkit-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
+    }
+    p,
+    li {
+        span {
+            font-weight: 700;
+        }
+    }
+    ul {
+        li {
+            padding: 4px 0;
+            a {
+                display: inline !important;
+            }
+        }
+    }
+}
+
+.active-item {
+    transform: rotate(180deg);
+}

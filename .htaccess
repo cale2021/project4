@@ -1,0 +1,59 @@
+Options -Indexes
+RewriteEngine on
+
+RewriteRule ^login$ login.php
+RewriteRule ^redimir/(.*)$ redimir.php?premio=$1
+RewriteRule ^redimio$ redimio.php
+RewriteRule ^exit$ exit.php
+RewriteRule ^premios$ premios.php
+RewriteRule ^descargar$ download.php
+RewriteRule ^finalizo$ finalizo.php
+RewriteRule ^finalizo-total$ finalizo-total.php
+RewriteRule ^finalizo-redimio$ finalizo-redimio.php
+
+RewriteRule ^mecanica$ mecanica.php
+RewriteRule ^progreso$ progreso.php
+RewriteRule ^progreso-redenciones$ progreso.php?redenciones=1
+RewriteRule ^alianzas$ alianzas.php
+RewriteRule ^premios$ premios.php
+RewriteRule ^terminos-condiciones$ tyc.php
+RewriteRule ^preguntas-frecuentes$ faq.php
+ErrorDocument 404 /not-found.php
+ErrorDocument 403 /not-found.php
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files ~ "^(composer)">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files ~ "^(package)">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files ~ "^(gulp)">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files ~ "^.*\.(env)">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+### never deliver .git folders, .gitIgnore
+RewriteRule ^(.*/)?\.(git|htaccess)+ - [R=404,L]
+RewriteRule ^(composer)+ - [R=404,L]
+
+# 2nd line of defense (if no mod_rewrite)
+RedirectMatch 404 ^(.*/)?\.(git|htaccess)+

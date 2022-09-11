@@ -1,0 +1,12 @@
+/vendor/
+/logs/
+/node_modules
+/virtualcods
+/awardtemp
+/tmp
+.env
+/quantum/redimir-test.php
+/quantum/libraries
+/voucher_leal
+.sass-cache/
+

@@ -1,0 +1,62 @@
+// =================== Variables ===================
+$gray-banner: #EBEBEB;
+$blue-banco: #000105;
+$blue-lg: #083167;
+$yellow-banco: #FFCF00;
+$red-banco: #C40B0F;
+$gray-nav: #B1B1B1;
+$white-color: #fff;
+$gray-banco: #525252;
+$color-tips: #272727;
+$gray-awards: #555555;
+$color-alianzas: #3E3E3E;
+$orange: #FD6719;
+$black-btn: #000000; // ===========Fonts ====== //
+$roboto: 'Roboto',
+sans-serif;
+$montserrat:'Montserrat',
+sans-serif;
+$dtl-bold: 'dtl_argot_bold';
+$dtl-black: 'dtl_argot_black';
+$releway-bold: 'relewaybold';
+$releway-black: 'ralewayblack';
+$h-regular: 'h-regular';
+$dtl-regular: 'dtl_argot_regular';
+$dtl-medium: 'dtl_argot_medium';
+//paths
+$pathBg: '../assets/bg/';
+$pathMainAward: '../assets/premio-mayor/';
+$pathIco: '../assets/icons/';
+// =================== Mixins ===================
+@mixin seudoElm ($cont: "", $pos:absolute) {
+    content: $cont;
+    position: $pos;
+}
+
+//Media Querys
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+@mixin media($media) {
+    @if $media==xs {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $media==sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $media==md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $media==lg {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+}
