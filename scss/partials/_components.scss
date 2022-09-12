@@ -1,13 +1,23 @@
 .main-content {
   width: 100%;
-  height: 100%;
   position: relative;
   &.bg-tpl-init {
-    background-image: url($pathBg + "bg-login.jpg");
+    background-image: url($pathBg + "bg-login.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right right;
-   
+    padding-bottom: 120px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 200px;
+      background: transparent linear-gradient(180deg, #0E3241C7 0%, #20202000 100%) 0% 0% no-repeat padding-box;
+    }
   }
 }
 
@@ -17,7 +27,7 @@
     padding: 6px;
     background-color: $yellow-banco;
     font-size: 25px;
-    font-family: $montserrat;
+    font-family: $roboto;
     line-height: 68px;
     @include media(xs) {
       font-size: 18px;
@@ -88,7 +98,7 @@
 //Main banner
 .clsMainBanner {
   width: 100%;
-  height: 600px;
+  height: 460px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -149,9 +159,9 @@
 }
 .content-banner{
   h4{
-    font-size: 35px;
+    font-size: 64px;
     color:#fff;
-    font-weight: 700;
+    font-weight: 100;
     @include media(xs){
       font-size: 24px;
     }
@@ -214,95 +224,44 @@
   padding-top: 35px;
 }
 
+.progress-content-items {
+  display: flex;
+  align-items: center;
+}
+
 //Progress Bar
 .content-progress-bar {
-  width: 95%;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(200, 170, 190, 1);
+  text-align: center;
+  background-color: #fff;
   margin: 0 auto;
   position: relative;
-  padding:20px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 2px 17px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 2px 17px -6px rgba(0,0,0,0.75);
-box-shadow: 0px 2px 17px -6px rgba(0,0,0,0.75);
-margin-bottom: 25px;
-@include media(xs){
-  width: 95%;
-}
-h3{
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #bfbfbf;
-  
-
-}
+  padding: 16px 32px;
+  border-radius: 7px;
+  margin-bottom: 25px;
+  @include media(xs){
+    width: 95%;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 17px;
+    color: rgba(80, 80, 80, 1);
+    padding-bottom: 10px;
+  }
 
   .round-number {
-    border-radius: 40px;
-    width: 250px;
-    text-align: center;
-    border:1px solid  #ffcf00;
-    background-color: #fff;
-    font-family: $roboto;
-    font-weight: 700;
-    padding: 5px 10px ;
-    color: #000105;
-    font-size: 15px;
     display: flex;
     align-items: center;
-    bottom: 130px;
-    text-align: right;
-    margin: 20px auto;
-    display: flex;
     justify-content: center;
-    -webkit-box-shadow: 0px 0px 13px -6px rgba(255,207,0,1);
-    -moz-box-shadow: 0px 0px 13px -6px rgba(255,207,0,1);
-    box-shadow: 0px 0px 13px -6px rgba(255,207,0,1);
-    @include media(xs) {
-      min-width: 230px;
-      font-size: 20px !important;
-    }
-    p {
-      font-size: 14px;
-      margin-right: 8px;
-      margin-bottom: 0;
-      @include media(xs) {
-        font-size: 12px;
-      }
-    }
-    div {
-      margin-right: 15px;
-      font-size: 15px;
-      @include media(xs) {
-        font-size: 13px;
-      }
-    }
-    @include media(xs) {
-      width: 90px;
-      height: 40px;
-      font-size: 30px;
-      top: -20px;
-    }
-    span {
-      
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   width: 2px;
-      //   height: 50px;
-      //   border-left: 2px dashed #ffcf00;
-      //   bottom: -50px;
-      //   left: 94px;
-      // }
-    }
+  }
+
+  .numer-monto {
+    font-size: 18px;
+    color: rgba(80, 80, 80, 1);
+    margin: 8px 0;
   }
 
 }
@@ -347,16 +306,19 @@ h3{
 }
 
 .progress {
-  height: 20px;
-  border-radius: 50px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #C8AABE;
   overflow: hidden;
+  background-color: transparent;
   z-index: 1;
   position: relative;
+  margin-bottom: 10px;
   @include media(xs) {
     height: 30px;
   }
   .progress-bar {
-    background-color: #ffcf00;
+    background-color: #C8AABE;
   }
 }
 
@@ -395,7 +357,7 @@ box-shadow: 1px -1px 13px -4px rgba(0,0,0,0.75);
          font-weight: 600;
          font-size: 22px;
         padding-left: 5px;
-         font-family: $montserrat;
+         font-family: $roboto;
          font-weight: 700;
        }
        span{
@@ -489,7 +451,7 @@ box-shadow: 1px -1px 13px -4px rgba(0,0,0,0.75);
   position: relative;
   height: inherit;
   &.tyc {
-    background-image: url($pathBg + "bg-login.jpg");
+    background-image: url($pathBg + "bg-login.png");
     .yellow-word {
       position: absolute;
       right: 60px;
@@ -518,7 +480,7 @@ box-shadow: 1px -1px 13px -4px rgba(0,0,0,0.75);
       }
       h2 {
         color: $blue-lg;
-        font-family: $montserrat;
+        font-family: $roboto;
         font-weight: 700;
         margin: 20px 0;
         font-size: 36px;
@@ -597,5 +559,20 @@ box-shadow: 1px -1px 13px -4px rgba(0,0,0,0.75);
         }
       }
     }
+  }
+}
+
+
+.description-basic {
+  p {
+    font-size: 32px;
+    color: #505050;
+    font-weight: 100;
+  }
+
+  strong {
+    margin-top: 31px;
+    color: #14317D;
+    font-weight: 600;
   }
 }

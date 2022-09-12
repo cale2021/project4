@@ -22,7 +22,7 @@
                 background-color: $yellow-banco;
                 width: 50px;
                 height: 50px;
-                font-family: $montserrat;
+                font-family: $roboto;
                 font-weight: 700;
                 font-size: 32px;
                 margin-right: 10px;
@@ -136,7 +136,7 @@
             left: 20px;
 
             h3 {
-                font-family: $montserrat;
+                font-family: $roboto;
                 font-weight: 700;
                 font-size: 24px;
                 position: relative;
@@ -157,6 +157,64 @@
                 line-height: 18px;
                 display: block;
                 width: 55%;
+            }
+        }
+    }
+}
+
+.mecanica {
+    .content-banner {
+        h2 {
+            font-size: 64px;
+            color: #fff;
+            font-weight: 100;
+        }
+    }
+}
+
+.steps-win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .step-item {
+        margin: 0 15px;
+        width: 31%;
+
+        h2 {
+            margin-bottom: 13px;
+            font-size: 22px;
+            color: #505050;
+        }
+
+        p {
+            color: #505050;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .content-item {
+            position: relative;
+            padding: 23px 14px 43px;
+
+            &::after, &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+            }
+
+            &::after {
+                height: 100%;
+                top: 0;
+                background-color: #919150;
+                width: 2px;
+            }
+
+            &::before {
+                height: 2px;
+                bottom: 0;
+                background-color: #919150;
+                width: 50%;
             }
         }
     }

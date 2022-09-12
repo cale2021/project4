@@ -65,21 +65,10 @@ try {
                 <div class="row">
                     <div class="col-md-6">
                         <div class="content-banner">
-
-
-                            <p class="basic-text white">Venimos recargados con increíbles bonos para que vivas nuevas experiencias.</p>
+                            <h2>¿Cómo ganar?</h2>
                         </div>
                     </div>
                     <div class="col-md-6"></div>
-                </div>
-                <div class="content-title mechanic">
-                    <span>VUELVE LA TEMPORADA DE</span>
-                    <div class="yellow-word">
-                        <span>VIVE TUS COMPRAS Y GANA</span>
-
-                    </div>
-                    <span>GRANDES EXPERIENCIAS</span>
-
                 </div>
             </div>
 
@@ -88,185 +77,41 @@ try {
 
     </section>
     <div class="main-content">
-        <section class="clsSteps">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 content-title-sect">
-                        <h3>Conoce cómo participar</h3>
-                        <span>Mecánica</span>
-
-                        <p>Usa tu <span>Tarjeta de Crédito Mastercard Banco de Bogotá</span> en todas tus compras y gana. </p>
-                        <p>¡Llega más rápido a tus metas y ahorra en tus compras con la oferta de la semana y los comercios aliados!</p>
+        <div class="container">
+            <h3>¿Viajar o probar nuevos sabores?</h3>
+            <p>Con tus tarjetas de crédito Mastercard Banco de Bogotá tus compras se convierten en ese plan que tanto te gusta.</p>
+            <p><strong>Estos son los pasos para ganar:</strong></p>
+            <div class="steps-win">
+                <div class="step-item step-1">
+                    <div class="head-item">
+                        <img src="assets/mecanica/step-1.jpg" alt="">
                     </div>
-                    <div class="col-md-6 steps-meca">
-                        <div class="item">
-                            <span class="round wow animated fadeInDown">
-                                1
-                            </span>
-                            <p>Cumple tu meta mensual de facturación.</p>
-                        </div>
-                        <div class="item">
-                            <span class="round wow animated fadeInDown">
-                                2
-                            </span>
-                            <p>Cumple tu meta mensual de *transacciones.</p>
-                        </div>
-                        <div class="item">
-                            <span class="round wow animated fadeInDown">
-                                3
-                            </span>
-                            <p>Gana un bono digital redimible en el comercio que más te guste. Puedes ganar un bono mensual.</p>
-                        </div>
-                        <div class="item">
-                            <span class="round wow animated fadeInDown">
-                                4
-                            </span>
-                            <p>Sigue usando tu Tarjeta de Crédito Banco de Bogotá y participa por uno de los 10 bonos mensuales de Aviatur.
-                                <span class="note-step">Solo será válida una *transacción diaria por comercio.</span>
-                            </p>
-
-                        </div>
-
+                    <div class="content-item">
+                        <h2>Sorprende a los que más quieres comprando con tu <strong>tarjeta de crédito</strong></h2>
+                        <p>¡Úsala para comprar en tus tiendas favoritas! Cada compra te acerca a tu meta para ganar increíbles premios.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="awards mec">
-            <div class="container">
-                <div class="row content-tabsmec">
-                    <div class="col-md-6">
-                        <div class="content-title-sect">
-                            <h3 class="tabsTitle">Elige un bono de la galería que hemos armado para ti</h3>
-                            <span>Premios</span>
-                            <p class="descAwards">Cumple tus metas y redime tu bono digital en el comercio que más te guste.</p>
-                        </div>
-                        <div class="content-nav-mec">
-                            <ul class="nav  tabs-awards-nav" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab-meca" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Bonos para redimir</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="aviatur-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Bonos Aviatur</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
+                <div class="step-item step-2">
+                    <div class="head-item">
+                        <img src="assets/mecanica/step-2.jpg" alt="">
                     </div>
-                    <div class="col-md-6">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active awabtn" id="home" role="tabpanel" aria-labelledby="home-tab-meca">
-                                <div class="grid-awards mecanica ">
-
-
-                                    <div class="row">
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-frisby.png" alt="Logo Frisby" class="wow animated zoomIn">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-mcdonalds.png" alt="Logo mcdonalds" class="wow animated zoomIn">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-alkosto.png" alt="Logo Alkosto" class="wow animated zoomIn">
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-crepes.png" alt="Logo Crepes & Waffles" class="wow animated zoomIn">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-pepe.png" alt="Logo Pepe Ganga" class="wow animated zoomIn">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 items-awards-mec">
-                                            <div class="award">
-                                                <img src="assets/bonos/logo-inkanta.png" alt="Logo Inkanta" class="wow animated zoomIn">
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <a href="/premios" class="btn yellow">Ver más premios</a>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade awabtn" id="profile" role="tabpanel" aria-labelledby="aviatur-tab">
-                                <div class="row content-main-awards">
-                                    <div class="col-md-12">
-                                        <div class="item aviatur-uno">
-                                            <div class="overlay">
-                                                <div class="desc">
-                                                    <h3>BONO AVIATUR</h3>
-
-                                                    <span class="award-desc">
-                                                        GANA UNO DE LOS 10 BONOS MENSUALES POR $3.000.000
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="item aviatur-dos">
-                                            <div class="overlay">
-                                                <div class="desc">
-                                                    <h3>BONO AVIATUR</h3>
-
-                                                    <span class="award-desc">
-                                                        GANA UNO DE LOS 10 BONOS MENSUALES POR $1.000.000
-                                                    </span>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <a href="/premios.php#profile" class="btn yellow">Ver más premios</a>
-                            </div>
-                        </div>
-
+                    <div class="content-item">
+                        <h2>Cumple <strong>tu meta de compras</strong></h2>
+                        <p>Además de recibir descuentos en tus comercios favoritos, cada compra te acerca más a tu meta y a la oportunidad de disfrutar planes inolvidables con tus amigos o familia.</p>
                     </div>
                 </div>
-            </div>
-            </secction>
-            <img src="assets/logos/vigilado-int.svg" alt="" class="vigilado interno">
-    </div>
-
-    <div class="modal fade clsModalFinal" id="modalFinal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-
-                <div class="modal-body">
-                    <h2>VIVE TUS COMPRAS Y GANA</h2>
-
-                    <p>¡Quedan pocos días para ganar el premio mayor!</p>
-                    <p>Usa tus <strong>Tarjetas de Crédito Mastercard del Banco de Bogotá</strong> y participa.</p>
-                    <button type="" class="btn yellow" data-dismiss="modal" aria-label="Close">Continuar</button>
-
+                <div class="step-item step-3">
+                    <div class="head-item">
+                        <img src="assets/mecanica/step-3.jpg" alt="">
+                    </div>
+                    <div class="content-item">
+                        <h2>Redime <strong>tu premio</strong></h2>
+                        <p>Una vez que alcances tu meta podrás disfrutar ese plan que tanto te gusta. Usa el código que recibirás en tu correo para redimir tu bono.</p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 
     <?php
     include __DIR__ . '/partiales/footer.php';

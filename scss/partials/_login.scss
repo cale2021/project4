@@ -9,7 +9,6 @@
         display: block;
         font-family: $roboto;
         font-weight: 700;
-        color: #fff;
         font-size: 18px;
         @include media(xs) {
             font-size: 14px;
@@ -34,7 +33,7 @@
     }
     a {
         display: block;
-        margin: 10px 0 35px;
+        margin: 17px 0 0px;
         border-radius: 10px;
         @include media(xs) {
             font-size: 13px;
@@ -45,9 +44,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        color: #fff;
-        padding: 35px 0;
-        justify-content: center;
+        color: #14317D;
         font-size: 13px;
         font-family: $roboto;
         @include media(xs){
@@ -57,7 +54,7 @@
         div {
             a {
                 display: inline;
-                color: #fff;
+                color: #14317D;
                 text-decoration: underline;
                 font-weight: 700;
             }
@@ -96,7 +93,6 @@
 }
 
 .cont-log {
-    padding-bottom: 45px;
     .content-title{
         position: static !important;
         @include media(xs){
@@ -198,5 +194,50 @@
         color: #fff;
         font-size: 14px;
         color: #F82D2D;
+    }
+}
+
+.content-banner-login {
+    h1 {
+        font-size: 64px;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 40px;
+
+        strong {
+            font-weight: 600;
+            background-color: #c8aabe;
+            display: inline-block;
+            padding: 0 12px;
+        }
+    }
+
+    img {
+    }
+}
+
+.section-login {
+    margin-top: 99px;
+}
+
+#form_login {
+    border-radius: 11px;
+    border: solid #14317D 1px;
+    padding: 16px;
+
+    label {
+        color: #505050;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    input {
+        border: solid #14317D 1px;
+        color: #505050;
+        border-radius: 0;
+
+        &::placeholder {
+            color: #303030;
+        }
     }
 }

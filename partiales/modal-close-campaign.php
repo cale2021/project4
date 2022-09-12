@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-md-6 cont-imag">
                         <img src="/assets/general/img-modal-close.png" alt="">
-                        <img src="/assets/logos/vigilado.svg" alt="" class="vigilado">
+                        <img src="/assets/logos/vigilado-footer.png" alt="" class="vigilado">
                     </div>
                     <div class="col-md-6 cont-description">
                         <h2>¡Gracias por tu participación!</h2>

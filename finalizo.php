@@ -68,7 +68,7 @@ $login_error = isset($_GET['login_error']) ? true : false;
             </div>
         </div>
 
-        <img src="assets/logos/vigilado.svg" alt="" class="vigilado login">
+        <img src="assets/logos/vigilado-footer.png" alt="" class="vigilado login">
 
     </div>
 

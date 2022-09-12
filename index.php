@@ -32,7 +32,6 @@ $login_error = isset($_GET['login_error']) ? true : false;
 
 
     <div class="main-content bg-tpl-init">
-
         <div class="header-init">
             <div class="container">
                 <div class="main-logo">
@@ -43,27 +42,37 @@ $login_error = isset($_GET['login_error']) ? true : false;
             </div>
         </div>
         <div class="container">
-
             <div class="row cont-log">
-                <div class="col-md-5">
-                    <div class="content-title">
-                        <span>VUELVE LA TEMPORADA DE</span>
-                        <div class="yellow-word">
-                            <span>VIVE TUS COMPRAS Y GANA</span>
-
+                <div class="col-md-6">
+                    <div class="content-banner-login">
+                        <div class="content-title">
+                            <h1>
+                                Vive Tus Compras y Gana Grandes<br><strong>Experiencias</strong>
+                            </h1>
+                            <img src="assets/icons/list-cards.png" alt="">
                         </div>
-                        <span>GRANDES EXPERIENCIAS</span>
-                        <p>
-                            Compra con tu <span>Tarjeta de Crédito Mastercard Banco de Bogotá,</span> cumple tus metas y gana un bono redimible en el comercio que elijas. Sigue comprando y participar por un bono de Aviatur.
-                        </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="description-basic">
+                        <p>Usa tus tarjetas de crédito Mastercard Banco de Bogotá y convierte tus compras en experiencias inolvidables.</p>
+                        <p><strong>Descubre cómo y prepárate para ganar</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
                     <div class="content-form">
                         <div class="content-form">
                             <form id="form_login" action="/mecanica" method="POST" autocomplete="off">
                                 <div class="first-form">
                                     <div class="form-group">
-                                        <label for="">Número de documento:</label>
-                                        <input type="text" max="5" name="user_s" id="" placeholder="Ingresa con los últimos 5 dígitos de tu documento">
+                                        <label for="">Ingresa tu código de acceso</label>
+                                        <input type="text" max="5" name="user_s" id="" placeholder="5 últimos dígitos de tu cédula">
                                         <div class="invalid-feedback <?php echo (isset($_GET['login_error']) || isset($_GET['recaptcha_error'])) ? 'active' : ''; ?>">
                                             <?php if (isset($_GET['login_error']))
                                                 echo 'Los datos que ingresaste no son correctos, verifica e intenta nuevamente.';
@@ -73,13 +82,13 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                                 echo 'Debes ingresar tu codigo único de usuario.'; ?>
                                         </div>
                                     </div>
-                                    <a href="#" id="sendFirstForm" class="btn yellow">Continuar</a>
+                                    <a href="#" id="sendFirstForm" class="btn blue">Continuar</a>
                                 </div>
 
                                 <div class="second-form">
                                     <div class="form-group date-inp">
-                                        <label for="">Fecha de nacimiento:</label>
-                                        <input type="text" id="datepicker" name="date_s" placeholder="Ingresa tu fecha de nacimiento">
+                                        <label for="">Ingresa tu fecha de nacimiento</label>
+                                        <input type="text" id="datepicker" name="date_s" placeholder="dd/mm/aaaa">
                                         <div class="invalid-feedback">
                                             Debe ingresar su fecha de nacimiento.
                                         </div>
@@ -91,12 +100,12 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                         <div class="accept-tyc">
                                             <input type="checkbox" name="tyc" id="tyc" value="s">
                                             <div class="">
-                                                He leído y acepto los <a href="">Términos y condiciones</a>
+                                            He leído y acepto los <a href="">términos y condiciones</a>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <a href="#" class="send-form-login btn yellow">Ingreso</a>
+                                    <a href="#" class="send-form-login btn blue">Ingreso</a>
                                 </div>
                                 <input type="hidden" value="" name="g-recaptcha-response" id="g-recaptcha-response">
                                 <input type="hidden" value="" name="user_name">
@@ -105,17 +114,10 @@ $login_error = isset($_GET['login_error']) ? true : false;
                             </form>
 
                         </div>
-
                     </div>
-
-
                 </div>
-                <div class="col-md-6"></div>
             </div>
         </div>
-
-        <img src="assets/logos/vigilado.svg" alt="" class="vigilado login">
-
     </div>
 
     <?php include __DIR__ . '/partiales/footer.php';  ?>

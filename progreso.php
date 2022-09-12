@@ -224,33 +224,18 @@ for ($i = 1; $i <= $current_block_int; $i++) {
         <div>
             <div class="container banner-int">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-4">
                         <div class="content-banner">
-                            <h4>Conoce el progreso de tus compras</h4>
-                            <p class="basic-text white">¡Descubre en cada compra más experiencias por vivir! Sigue realizando tus compras con tus Tarjetas de Crédito Mastercard del Banco de Bogotá y prepárate para ganar.</p>
+                            <h4>Conoce tu progreso</h4>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
-                </div>
-                <div class="content-title mechanic">
-                    <span>VUELVE LA TEMPORADA DE</span>
-                    <div class="yellow-word">
-                        <span>VIVE TUS COMPRAS Y GANA</span>
-
-                    </div>
-                    <span>GRANDES EXPERIENCIAS</span>
-
                 </div>
             </div>
-
         </div>
-
-
     </section>
     <div class="main-content">
         <section class="clsProgress">
-            <div class="container  content-tabs-title">
-
+            <!-- <div class="container  content-tabs-title">
                 <div class="row">
                     <?php
                     if ($campaign_closure == 'Y') {
@@ -287,73 +272,95 @@ for ($i = 1; $i <= $current_block_int; $i++) {
                         ?>
                     </div>
                 </div>
-
-
-
-            </div>
+            </div> -->
             <div class="container">
                 <div class="row goalsUser">
-                    <div class="col-md-6">
-                        <div class="content-progress-bar">
-                            <h3>Meta en monto</h3>
-                            <div class="round-number">
-                                <div><span>
-                                        <p>llevas</p> <?php echo '$' . number_format($amount_current_block, 0, ',', '.'); ?> </div>
+                    <div class="col-md-5">
 
-                                <?php echo $percentage_current_block; ?>%</span>
-
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar monto" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <dov class="content-limit">
-                                <span class="min">$0</span>
-                                <span class="max"><?php echo '$' . number_format($user_goal['goal_' . $current_block], 0, ',', '.'); ?></span>
-                            </dov>
-
-
-                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="content-progress-bar">
-                            <h3>Meta en transacciones</h3>
-                            <div class="round-number">
-                                <div><span>
-                                        <p>llevas</p> <?php echo  number_format($trx_current_block, 0, ',', '.'); ?> transacciones </div>
+                    <div class="col-md-7">
+                        <h5>Cada día estás más cerca de disfrutar increíbles premios</h5>
+                        <div class="progress-content-items">
+                            <div class="content-progress-bar">
+                                <h3>Monto en compras</h3>
+                                <img src="assets/icons/ico-compras.png" alt="">
+                                <div class="numer-monto">$xxx.xxx</div>
+                                <!-- <div class="content-limit">
+                                    <span class="min">$0</span>
+                                    <span class="max"><?php echo '$' . number_format($user_goal['goal_' . $current_block], 0, ',', '.'); ?></span>
+                                </div> -->
 
-
-
+                                <div class="progress">
+                                    <div class="progress-bar monto" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="round-number">
+                                    <p>Llevas 0% de tu meta</p>
+                                    <!-- <div>
+                                        <span>
+                                            llevas <?php echo '$' . number_format($amount_current_block, 0, ',', '.'); ?><?php echo $percentage_current_block; ?>%
+                                        </span>
+                                    </div> -->
+                                </div>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar trx" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="content-progress-bar">
+                                <h3>Monto en transacciones</h3>
+                                <img src="assets/icons/ico-transaciones.png" alt="">
+                                <div class="numer-monto">#xx</div>
+                                <!-- <div class="content-limit">
+                                    <span class="min">0</span>
+                                    <span class="max"><?php echo  number_format($user_goal['goal_trx_' . $current_block], 0, ',', '.'); ?></span>
+                                </div> -->
+                                <div class="progress">
+                                    <div class="progress-bar trx" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="round-number">
+                                    <p>Llevas 0 transacciones de 10</p>
+                                    <!-- <div>
+                                        <span>
+                                            llevas <?php echo  number_format($trx_current_block, 0, ',', '.'); ?> transacciones
+                                        </span>
+                                    </div>     -->
+                                </div>
+    
                             </div>
-                            <dov class="content-limit">
-                                <span class="min">0</span>
-                                <span class="max"><?php echo  number_format($user_goal['goal_trx_' . $current_block], 0, ',', '.'); ?></span>
-                            </dov>
-
-
                         </div>
+
+                        <div class="dinamic-content-winner">
+                            <h6 class="title-items-progress">Completa la meta para ganar.</h6>
+                            <!-- Mostrar descriptions winner cuando sea ganador y ocultar titulo -->
+                            <div class="descriptions-winer">
+                                <div class="item-description">
+                                    <span>1</span>
+                                    <p>Ingresa a la sección premios.</p>
+                                </div>
+                                <div class="item-description">
+                                    <span>2</span>
+                                    <p>Selecciona el premio que más te guste.</p>
+                                </div>
+                                <div class="item-description">
+                                    <span>3</span>
+                                    <p>Confirma el premio que seleccionaste.</p>
+                                </div>
+                                <div class="item-description">
+                                    <span>4</span>
+                                    <p>Y listo, ¡disfrútalo!</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Mostrar boton cuando sea ganador -->
+                        <a href="#" class="btn blue">Redime tu premio</a>
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content-not">
-                            <div class="last-messa">
-                                <strong>Última actualización:</strong> <?php echo $update_date_text; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <div id="container-redemptions" class="container grid-awards content-awards-redeem">
+            <!-- <div id="container-redemptions" class="container grid-awards content-awards-redeem">
                 <div class="row">
                     <?php echo $awards_show_html; ?>
                 </div>
-            </div>
+            </div> -->
 
         </section>
         <img src="assets/logos/vigilado-int.svg" alt="" class="vigilado interno">
