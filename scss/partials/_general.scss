@@ -409,3 +409,33 @@ ol {
     right: 0px;
   }
 }
+
+
+.content-tyc {
+  p {
+    color: #041129;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #505050;
+    font-weight: 600;
+  }
+
+  li {
+        span {
+            font-weight: 700;
+        }
+    }
+    ul {
+        li {
+            padding: 4px 0;
+            a {
+                display: inline !important;
+            }
+        }
+    }
+}

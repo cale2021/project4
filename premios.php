@@ -123,32 +123,86 @@ if (!isset($_SESSION['code-validate-attempts'])) {
                 <div class="row">
                     <div class="col-md-6">
                         <div class="content-banner">
-
-                            <h4>Selecciona el bono que deseas redimir</h4>
-                            <p class="basic-text white">¡Cada compra te acerca a una grandiosa experiencia! Sigue usando tu Tarjeta de Crédito Mastercard Banco de Bogotá y gana hasta 4 bonos digitales mensuales y uno de los bonos de Aviatur.</p>
+                            <h4>Catálogo de premios</h4>
                         </div>
                     </div>
                     <div class="col-md-6"></div>
                 </div>
-                <div class="content-title mechanic">
-                    <span>VUELVE LA TEMPORADA DE</span>
-                    <div class="yellow-word">
-                        <span>VIVE TUS COMPRAS Y GANA</span>
-
-                    </div>
-                    <span>GRANDES EXPERIENCIAS</span>
-
-                </div>
             </div>
-
         </div>
-
-
     </section>
 
     <div class="main-content">
         <section class="clsAwards">
-            <div class="container content-tabs-title">
+            <div class="container">
+                <div class="desciption-int">
+                    <h3>Aquí podrás encontrar los premios que podrías disfrutar.</h3>
+                    <p>Aun no sabes cómo redimir premios, consulta la opción cómo ganar</p>
+                </div>
+                <div class="cards-awwards">
+                    <div class="item-awward">
+                        <div class="head-item">
+                            <img src="assets/premio-mayor/prub-img.png" alt="">
+                        </div>
+                        <div class="content-intem">
+                            <h3>Jumbo</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <div class="precio">$00.000</div>
+                            <a href="#" class="btn blue">Redimir bono</a>
+                            <a href="#" class="cta-tyc">Aplican términos y condiciones</a>
+                        </div>
+                    </div>
+                    <div class="item-awward">
+                        <div class="head-item">
+                            <img src="assets/premio-mayor/prub-img.png" alt="">
+                        </div>
+                        <div class="content-intem">
+                            <h3>Jumbo</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <div class="precio">$00.000</div>
+                            <a href="#" class="btn blue">Redimir bono</a>
+                            <a href="#" class="cta-tyc">Aplican términos y condiciones</a>
+                        </div>
+                    </div>
+                    <div class="item-awward">
+                        <div class="head-item">
+                            <img src="assets/premio-mayor/prub-img.png" alt="">
+                        </div>
+                        <div class="content-intem">
+                            <h3>Jumbo</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <div class="precio">$00.000</div>
+                            <a href="#" class="btn blue">Redimir bono</a>
+                            <a href="#" class="cta-tyc">Aplican términos y condiciones</a>
+                        </div>
+                    </div>
+                    <div class="item-awward">
+                        <div class="head-item">
+                            <img src="assets/premio-mayor/prub-img.png" alt="">
+                        </div>
+                        <div class="content-intem">
+                            <h3>Jumbo</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <div class="precio">$00.000</div>
+                            <a href="#" class="btn blue">Redimir bono</a>
+                            <a href="#" class="cta-tyc">Aplican términos y condiciones</a>
+                        </div>
+                    </div>
+                    <div class="item-awward">
+                        <div class="head-item">
+                            <img src="assets/premio-mayor/prub-img.png" alt="">
+                        </div>
+                        <div class="content-intem">
+                            <h3>Jumbo</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                            <div class="precio">$00.000</div>
+                            <a href="#" class="btn blue">Redimir bono</a>
+                            <a href="#" class="cta-tyc">Aplican términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container content-tabs-title">
 
                 <div class="row">
 
@@ -283,7 +337,7 @@ if (!isset($_SESSION['code-validate-attempts'])) {
 
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </section>
         <img src="assets/logos/vigilado-int.svg" alt="" class="vigilado interno">

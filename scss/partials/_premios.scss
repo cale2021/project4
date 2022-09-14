@@ -2,6 +2,12 @@
     padding: 45px 0;
 }
 
+.awards {
+    .content-banner {
+        padding-right: 50px;
+    }
+}
+
 .content-tabs-title {
     padding: 0px 0 45px 0;
     .row {
@@ -332,4 +338,75 @@
         position: absolute;
     }
 
+}
+
+.cards-awwards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item-awward {
+        width: 28%;
+        margin: 0 25px;
+
+        .head-item {
+            height: 147px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .content-intem {
+            background-color: #EFEFEF;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            top: -10px;
+            padding: 16px 10px;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 800;
+                color: #121212;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #6E6E6E;
+                margin-bottom: 16px;
+            }
+
+            .precio {
+                color: #14317D;
+                font-size: 22px;
+                font-weight: 800;
+            }
+
+            .btn {
+                margin-top: 36px;
+                width: 100%;
+            }
+
+            .cta-tyc {
+                display: block;
+                margin-top: 12px;
+                text-align: center;
+                font-size: 16px;
+                color: #14317D;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media(max-width: 990px) {
+        .item-awward {
+            .item-awward {
+                width: 100%;
+            }
+        }
+    }
 }

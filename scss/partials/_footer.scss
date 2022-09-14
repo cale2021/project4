@@ -91,6 +91,14 @@ footer {
                     }
                 }
             }
+
+            @media(max-width: 990px) {
+                flex-wrap: wrap;
+
+                li {
+                    width: 100%;
+                }
+            }
         }
     }
 }

@@ -404,6 +404,27 @@ ol {
   right: 0px;
 }
 
+.content-tyc p {
+  color: #041129;
+  font-size: 15px;
+  font-weight: 400;
+}
+.content-tyc h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #505050;
+  font-weight: 600;
+}
+.content-tyc li span {
+  font-weight: 700;
+}
+.content-tyc ul li {
+  padding: 4px 0;
+}
+.content-tyc ul li a {
+  display: inline !important;
+}
+
 .header-init {
   width: 100%;
   height: 120px;
@@ -488,7 +509,7 @@ header nav ul li a {
   }
 }
 header nav ul li.active, header nav ul li:hover {
-  border-bottom: 1px solid #FFCF00;
+  border-bottom: 1px solid #fff;
   border-width: 100%;
 }
 
@@ -601,6 +622,14 @@ footer .menu-accordion ul li a::after {
   right: 0;
   position: absolute;
 }
+@media (max-width: 990px) {
+  footer .menu-accordion ul {
+    flex-wrap: wrap;
+  }
+  footer .menu-accordion ul li {
+    width: 100%;
+  }
+}
 
 .main-content {
   width: 100%;
@@ -707,6 +736,16 @@ footer .menu-accordion ul li a::after {
   background-size: cover;
   background-position: center top;
   margin-bottom: 30px;
+  position: relative;
+}
+.clsMainBanner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: transparent linear-gradient(180deg, rgba(14, 50, 65, 0.7803921569) 0%, rgba(32, 32, 32, 0) 100%) 0% 0% no-repeat padding-box;
 }
 .clsMainBanner .banner-int {
   position: relative;
@@ -715,6 +754,7 @@ footer .menu-accordion ul li a::after {
 @media (max-width: 767px) {
   .clsMainBanner {
     height: 530px;
+    background-position: right;
   }
 }
 .clsMainBanner > div {
@@ -746,7 +786,7 @@ footer .menu-accordion ul li a::after {
   }
 }
 .clsMainBanner.awards {
-  background-image: url("../assets/bg/bg-awards.jpg");
+  background-image: url("../assets/bg/bg-awards.png");
 }
 .clsMainBanner.alianzas {
   background-image: url("../assets/bg/bg-alianzas.jpg");
@@ -765,6 +805,11 @@ footer .menu-accordion ul li a::after {
   }
 }
 
+.content-banner h1 {
+  font-size: 64px;
+  color: #fff;
+  font-weight: 100;
+}
 .content-banner h4 {
   font-size: 64px;
   color: #fff;
@@ -1069,7 +1114,7 @@ footer .menu-accordion ul li a::after {
   height: inherit;
 }
 .main-contentbg.tyc {
-  background-image: url("../assets/bg/bg-login.png");
+  background-image: url("../assets/bg/bg-terminos.jpg");
 }
 .main-contentbg.tyc .yellow-word {
   position: absolute;
@@ -1150,51 +1195,12 @@ footer .menu-accordion ul li a::after {
     margin-top: 110px;
   }
 }
-.main-contentbg.tyc.not-found {
-  background-image: url("../assets/bg/bg-404.png") !important;
-  padding: 0 0 120px 0;
+.main-contentbg.faq {
+  background-image: url("../assets/bg/bg-faq.jpg");
 }
-.main-contentbg.tyc.not-found .content-not-f {
-  color: #fff;
-  text-align: center;
-  position: relative;
-}
-@media (max-width: 767px) {
-  .main-contentbg.tyc.not-found .content-not-f {
-    padding-top: 80px;
-  }
-}
-.main-contentbg.tyc.not-found .content-not-f::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 120px;
-  height: 8px;
-  background-color: #FFCF00;
-  left: calc(50% - 60px);
-}
-.main-contentbg.tyc.not-found .content-not-f p {
-  font-weight: 900;
-  font-size: 120px;
-}
-.main-contentbg.tyc.not-found .content-not-f span {
-  font-size: 60px;
-  font-weight: 700;
-}
-@media (max-width: 767px) {
-  .main-contentbg.tyc.not-found .content-not-f span {
-    font-size: 45px;
-  }
-}
-.main-contentbg.tyc.not-found .content-not-f a {
-  display: block;
-  width: 40%;
-  margin: 50px auto;
-}
-@media (max-width: 767px) {
-  .main-contentbg.tyc.not-found .content-not-f a {
-    width: 60%;
-  }
+.main-contentbg.not-found {
+  background-color: #C8AABE;
+  padding: 203px 0 161px;
 }
 
 .description-basic p {
@@ -1446,6 +1452,10 @@ footer .menu-accordion ul li a::after {
 
 .clsAwards {
   padding: 45px 0;
+}
+
+.awards .content-banner {
+  padding-right: 50px;
 }
 
 .content-tabs-title {
@@ -1779,6 +1789,95 @@ footer .menu-accordion ul li a::after {
   position: absolute;
 }
 
+.cards-awwards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-awwards .item-awward {
+  width: 28%;
+  margin: 0 25px;
+}
+.cards-awwards .item-awward .head-item {
+  height: 147px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.cards-awwards .item-awward .head-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.cards-awwards .item-awward .content-intem {
+  background-color: #EFEFEF;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  top: -10px;
+  padding: 16px 10px;
+}
+.cards-awwards .item-awward .content-intem h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #121212;
+  margin-bottom: 8px;
+}
+.cards-awwards .item-awward .content-intem p {
+  font-size: 18px;
+  color: #6E6E6E;
+  margin-bottom: 16px;
+}
+.cards-awwards .item-awward .content-intem .precio {
+  color: #14317D;
+  font-size: 22px;
+  font-weight: 800;
+}
+.cards-awwards .item-awward .content-intem .btn {
+  margin-top: 36px;
+  width: 100%;
+}
+.cards-awwards .item-awward .content-intem .cta-tyc {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 16px;
+  color: #14317D;
+  text-decoration: underline;
+}
+@media (max-width: 990px) {
+  .cards-awwards .item-awward .item-awward {
+    width: 100%;
+  }
+}
+
+.text-404 {
+  text-align: center;
+  position: relative;
+  padding: 13px 0 42px;
+}
+.text-404 h1 {
+  font-size: 127px;
+  color: #fff;
+  margin: 0;
+}
+.text-404 p {
+  margin: 0;
+  font-size: 27px;
+  color: white;
+}
+.text-404::before {
+  top: 0;
+}
+.text-404::after {
+  bottom: 0;
+}
+.text-404::after, .text-404::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  height: 12px;
+}
+
 .clsSteps .steps-meca .item {
   display: flex;
   align-items: center;
@@ -1941,10 +2040,30 @@ footer .menu-accordion ul li a::after {
   font-weight: 100;
 }
 
+.desciption-int {
+  padding: 0 20%;
+  text-align: center;
+}
+.desciption-int h3 {
+  color: #505050;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+.desciption-int p {
+  color: #505050;
+  font-size: 20px;
+}
+@media (max-width: 990px) {
+  .desciption-int {
+    padding: 0 15px;
+  }
+}
+
 .steps-win {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 124px;
 }
 .steps-win .step-item {
   margin: 0 15px;
@@ -1955,10 +2074,16 @@ footer .menu-accordion ul li a::after {
   font-size: 22px;
   color: #505050;
 }
+.steps-win .step-item h2 strong {
+  color: #fff;
+  font-weight: 100;
+  display: inline-block;
+  padding: 0 2px;
+}
 .steps-win .step-item p {
   color: #505050;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .steps-win .step-item .content-item {
   position: relative;
@@ -1981,14 +2106,44 @@ footer .menu-accordion ul li a::after {
   background-color: #919150;
   width: 50%;
 }
+.steps-win .step-1 h2 strong {
+  background-color: #919150;
+}
+.steps-win .step-2 h2 strong {
+  background-color: #C8AABE;
+}
+.steps-win .step-2 .content-item::after, .steps-win .step-2 .content-item::before {
+  background-color: #C8AABE;
+}
+.steps-win .step-3 h2 strong {
+  background-color: #8CAFBE;
+}
+.steps-win .step-3 .content-item::after, .steps-win .step-3 .content-item::before {
+  background-color: #8CAFBE;
+}
+@media (max-width: 990px) {
+  .steps-win {
+    flex-wrap: wrap;
+  }
+  .steps-win .step-item {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
 
+.faq-content {
+  margin: 56px 0 124px;
+}
+.faq-content button {
+  padding-left: 0;
+}
 .faq-content button.btn {
   text-align: left;
-  color: #000;
+  color: #505050;
   text-decoration: none;
-  padding: 25px 15px;
   display: flex;
   width: 100%;
+  font-size: 22px;
   position: relative;
   padding-right: 50px;
 }
@@ -2010,13 +2165,28 @@ footer .menu-accordion ul li a::after {
 .faq-content button.btn img {
   transition: 0.5s ease;
   position: absolute;
-  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 20px;
 }
 @media (max-width: 767px) {
   .faq-content button.btn img {
     width: 30px;
     right: -5px;
   }
+}
+.faq-content .card {
+  border: none;
+  border-bottom: solid #8CAFBE 2px;
+}
+.faq-content .card .card-header {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.faq-content .card .card-body {
+  padding-left: 0;
+  padding-right: 100px;
 }
 
 .contenttyc {
@@ -2033,16 +2203,6 @@ footer .menu-accordion ul li a::after {
   -webkit-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.75);
-}
-.contenttyc p span,
-.contenttyc li span {
-  font-weight: 700;
-}
-.contenttyc ul li {
-  padding: 4px 0;
-}
-.contenttyc ul li a {
-  display: inline !important;
 }
 
 .active-item {

@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="main-contentbg tyc not-found">
+    <div class="main-contentbg not-found">
 
         <header>
             <div class="container logo">
@@ -35,17 +35,16 @@
 
         <div class="content">
             <div class="container">
-
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="content-not-f">
-                            <p>404</p>
-                            <span>Página no encontrada</span>
-                            <a href="/" class="btn yellow">Volver al inicio</a>
-                        </div>
-
+                    <div class="col-12 col-md-6">
+                        <img src="assets/general/404.svg" alt="Imagen no found">
                     </div>
-
+                    <div class="col-12 col-md-6">
+                        <div class="text-404">
+                            <h1>404</h1>
+                            <p>Página no encontrada</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

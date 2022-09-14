@@ -78,16 +78,18 @@ try {
     </section>
     <div class="main-content">
         <div class="container">
-            <h3>¿Viajar o probar nuevos sabores?</h3>
-            <p>Con tus tarjetas de crédito Mastercard Banco de Bogotá tus compras se convierten en ese plan que tanto te gusta.</p>
-            <p><strong>Estos son los pasos para ganar:</strong></p>
+            <div class="desciption-int">
+                <h3>¿Viajar o probar nuevos sabores?</h3>
+                <p>Con tus tarjetas de crédito Mastercard Banco de Bogotá tus compras se convierten en ese plan que tanto te gusta.</p>
+                <p><strong>Estos son los pasos para ganar:</strong></p>
+            </div>
             <div class="steps-win">
                 <div class="step-item step-1">
                     <div class="head-item">
                         <img src="assets/mecanica/step-1.jpg" alt="">
                     </div>
                     <div class="content-item">
-                        <h2>Sorprende a los que más quieres comprando con tu <strong>tarjeta de crédito</strong></h2>
+                        <h2>Sorprende a los que más quieres comprando con tu<br><strong>tarjeta de crédito</strong></h2>
                         <p>¡Úsala para comprar en tus tiendas favoritas! Cada compra te acerca a tu meta para ganar increíbles premios.</p>
                     </div>
                 </div>

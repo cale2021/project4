@@ -1,0 +1,36 @@
+.text-404 {
+    text-align: center;
+    position: relative;
+    padding: 13px 0 42px;
+
+    h1 {
+        font-size: 127px;
+        color: #fff;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        font-size: 27px;
+        color: white;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        height: 12px;
+    }
+
+}
